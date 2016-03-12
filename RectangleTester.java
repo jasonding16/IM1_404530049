@@ -66,7 +66,7 @@ public class RectangleTester
 			
 			System.out.println(rec1.toString());
 	        System.out.println("Area:"+rec1.getWidth()*rec1.getHeight());
-	        System.out.println("Perimeter:"+(rec1.getWidth()+rec1.getHeight()*2));
+	        System.out.println("Perimeter:"+(rec1.getWidth()*2+rec1.getHeight()*2));
 	                
 	        System.out.println("\nHeight:");
 			height = console.nextInt();
@@ -80,7 +80,7 @@ public class RectangleTester
 			
 			System.out.println(rec2.toString());
 	        System.out.println("Area:"+rec2.getWidth()*rec2.getHeight());
-	        System.out.println("Perimeter:"+rec2.getWidth()+rec2.getHeight()*2);
+	        System.out.println("Perimeter:"+(rec2.getWidth()*2+rec2.getHeight()*2));
 		}
 		catch(Exception e)
 		{
