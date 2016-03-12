@@ -33,14 +33,7 @@ class Rectangle
    {
 	   return Y;
    }
-   public double getArea()
-   {
-	   return Height*Width;
-   }
-   public double getPerimeter()
-   {
-	   return (Height+Width)*2;
-   }
+   
    public String toString()
    {
 	   return "java.Rectangle:"+"[ x="+X+",y="+Y+",width="+Width+",height="+Height+"]";
@@ -72,8 +65,8 @@ public class RectangleTester
 			Rectangle rec1 = new Rectangle(height, width,x,y);
 			
 			System.out.println(rec1.toString());
-	        System.out.println("Area:"+rec1.getArea());
-	        System.out.println("Perimeter:"+rec1.getPerimeter());
+	        System.out.println("Area:"+rec1.getWidth()*rec1.getHeight());
+	        System.out.println("Perimeter:"+(rec1.getWidth()+rec1.getHeight()*2));
 	                
 	        System.out.println("\nHeight:");
 			height = console.nextInt();
@@ -86,8 +79,8 @@ public class RectangleTester
 			Rectangle rec2 = new Rectangle(height, width,x,y);
 			
 			System.out.println(rec2.toString());
-	        System.out.println("Area:"+rec2.getArea());
-	        System.out.println("Perimeter:"+rec2.getPerimeter());
+	        System.out.println("Area:"+rec2.getWidth()*rec2.getHeight());
+	        System.out.println("Perimeter:"+rec2.getWidth()+rec2.getHeight()*2);
 		}
 		catch(Exception e)
 		{
